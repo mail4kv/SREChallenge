@@ -35,7 +35,7 @@ This will install the web server, copies all dependencies such configuration fil
 
 <b>Testing:</b>
 
-The ansible script will invokes a shell script to validate the server configurations and the application accessibility.
+The ansible script will executes a shell script to validate the server configurations and the application accessibility.
 
 
 	
