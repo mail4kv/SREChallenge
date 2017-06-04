@@ -1,0 +1,1 @@
+curl -ik https://ec2-13-58-26-246.us-east-2.compute.amazonaws.com/ 2>/dev/null | head -n 1 | cut -d$' ' -f2
