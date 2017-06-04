@@ -16,7 +16,7 @@ Here are steps to be followed to create a running instance in AWS.
 
 <b>Security:</b>
 
-	In order to secure the application from public access, you need to generate a SSL certificate and update apache configuration to reflect it. We generated a self signed certificate and updated apache configuration as below.
+In order to secure the application from public access, you need to generate a SSL certificate and update apache configuration to reflect it. We generated a self signed certificate and updated apache configuration as below.
 
 <VirtualHost ec2-13-58-26-246.us-east-2.compute.amazonaws.com:443>
 DocumentRoot /var/www/html/sample/
@@ -35,7 +35,7 @@ This will install the web server, copies all dependencies such configuration fil
 
 <b>Testing:</b>
 
-	The ansible script will invokes a shell script to validate the server configurations and the application accessibility.
+The ansible script will invokes a shell script to validate the server configurations and the application accessibility.
 
 
 	
