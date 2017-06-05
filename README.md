@@ -19,8 +19,8 @@ Here are steps to be followed to create a running instance in AWS.
 
 In order to secure the application from public access, you need to generate a SSL certificate and update apache configuration to reflect it. We generated a self signed certificate and updated apache configuration as below.
 
-<VirtualHost ec2-13-58-26-246.us-east-2.compute.amazonaws.com:443>
-DocumentRoot /var/www/html/sample/
+<VirtualHost ec2-13-58-188-253.us-east-2.compute.amazonaws.com:443>
+DocumentRoot /var/www/html/Sample/
 SSLEngine  on
 SSLCertificateFile /etc/httpd/conf/mysitename.crt
 SSLCertificateKeyFile /etc/httpd/conf/mysitename.key
@@ -30,13 +30,13 @@ SSLCertificateKeyFile /etc/httpd/conf/mysitename.key
 
 Once you have the instance created, just run the ansible script using anisble playbook as below.
 
-`ansible-playbook –I ansible_hosts challenge.yml`
+`ansible-playbook –I hosts sre_demo.yml`
 
 This will install the web server, copies all dependencies such configuration file, certs, keys and deploys the html application on it.
 
 <b>Testing:</b>
 
-The ansible script will executes a shell script to validate the server configurations and the application accessibility.
+The ansible script will executes a shell script `hello.sh` to validate the server configurations and the application accessibility.
 
 
 	
