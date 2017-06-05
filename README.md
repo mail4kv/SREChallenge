@@ -26,7 +26,7 @@ Here are steps to be followed to create a running instance in AWS.
 	SSLCertificateKeyFile /etc/httpd/conf/mysitename.key
 </VirtualHost>
 ```
-We need to make entry of the below configuration in `httpd.conf` to redirect http requests to https.
+Edit the apache configuration file `httpd.conf` to redirect http requests to https.
 
 ```
 <VirtualHost *:80>
