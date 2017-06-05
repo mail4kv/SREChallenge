@@ -7,6 +7,7 @@
 Here are steps to be followed to create a running instance in AWS.
 
 •	Create an AWS account if not already exist
+
 •	Login to the AWS console using your credentials.
 
 	https://aws.amazon.com/
