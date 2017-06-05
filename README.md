@@ -13,6 +13,7 @@ Here are steps to be followed to create a running instance in AWS.
 
 * Go to Services tab and select EC2 under Compute group.
 * Follow the simple instructions specified in console or refer `amazon EC2` to create an amazon EC2 instance.
+* Make sure to use the right details such as instance type,region and security rules while creating the instance.
 
 ## Security:
 
@@ -45,9 +46,9 @@ Once you have the instance created, just run the ansible script using anisble pl
 
 ## Testing:
 
-   The ansible script will executes a shell script `hello.sh` to validate the server configurations and the application accessibility.
+   The ansible script `sre_demo.yml` includes a task to execute the shell script `hello.sh` which will validates the server configurations and the application accessibility.
 
-
+   If the application is reachable, then it will responds with `Hello, You accessed me Sucessfully!!` message. Otherwise it will responds with `Hello, You cant access me now. Somthing seems to be wrong!!!!!` message.
 	
 
         
