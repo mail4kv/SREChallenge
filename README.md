@@ -21,17 +21,18 @@ Here are steps to be followed to create a running instance in AWS.
 In order to secure the application from public access, you need to generate a SSL certificate and update apache configuration to reflect it. We generated a self signed certificate and updated apache configuration as below.
 
 <VirtualHost ec2-13-58-188-253.us-east-2.compute.amazonaws.com:443>
-DocumentRoot /var/www/html/Sample/
+DocumentRoot /var/www/html/sample/
 SSLEngine  on
 SSLCertificateFile /etc/httpd/conf/mysitename.crt
 SSLCertificateKeyFile /etc/httpd/conf/mysitename.key
 </VirtualHost>
 
+
 We need to make entry of the below configuration in `httpd.conf` to redirect http requests to https.
 
 <VirtualHost *:80>
-   ServerName ec2-13-58-188-253.us-east-2.compute.amazonaws.com
-   Redirect / https://ec2-13-58-188-253.us-east-2.compute.amazonaws.com
+    ServerName ec2-13-58-188-253.us-east-2.compute.amazonaws.com
+    Redirect / https://ec2-13-58-188-253.us-east-2.compute.amazonaws.com
 </VirtualHost> 
 
 
