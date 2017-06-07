@@ -26,7 +26,7 @@
      copy: src=/SREChallenge/scripts/hello.sh dest=/var/www/html/hello.sh mode=0777
 
    - name: Execute the script
-     local_action: command sudo sh /var/www/html/hello.sh
+     local_action: sh /var/www/html/hello.sh
 
   handlers:
    - name: restart apache
