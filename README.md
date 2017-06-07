@@ -7,10 +7,7 @@
 Here are steps to be followed to create a running instance in AWS.
 
 * Create an AWS account if not already exist
-* Login to the AWS console using your credentials.
-
-	https://aws.amazon.com/
-
+* Login to the [AWS Console](https://aws.amazon.com/) using your credentials.
 * Go to Services tab and select EC2 under Compute group.
 * Follow the simple instructions specified in console or refer [amazon EC2](http://docs.aws.amazon.com/efs/latest/ug/gs-step-one-create-ec2-resources.html) to create an amazon EC2 instance.
 * Make sure to use the right details such as instance type,region and security rules while creating the instance.
